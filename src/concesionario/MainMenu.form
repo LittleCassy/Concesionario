@@ -129,11 +129,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Vender Coche"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="sellCarButtonActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="viewSoldCarButton">
           <Properties>
             <Property name="text" type="java.lang.String" value="Ver coches vendidos"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="viewSoldCarButtonActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

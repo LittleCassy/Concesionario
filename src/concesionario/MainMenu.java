@@ -6,15 +6,13 @@ package concesionario;
 
 /**
  *
- * @author Usuario
+ * @author Casandra McJack
  */
 public class MainMenu extends javax.swing.JFrame {
 
-    /**
-     * Creates new form MainMenu
-     */
     public MainMenu() {
         initComponents();
+        DBShenaningans.init(jTable1);
     }
 
     /**
@@ -78,8 +76,18 @@ public class MainMenu extends javax.swing.JFrame {
         });
 
         sellCarButton.setText("Vender Coche");
+        sellCarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sellCarButtonActionPerformed(evt);
+            }
+        });
 
         viewSoldCarButton.setText("Ver coches vendidos");
+        viewSoldCarButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewSoldCarButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout panelBotonesLayout = new javax.swing.GroupLayout(panelBotones);
         panelBotones.setLayout(panelBotonesLayout);
@@ -115,7 +123,18 @@ public class MainMenu extends javax.swing.JFrame {
 
     private void newCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newCarButtonActionPerformed
         // TODO add your handling code here:
+        new NewCar();
     }//GEN-LAST:event_newCarButtonActionPerformed
+
+    private void sellCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sellCarButtonActionPerformed
+        // TODO add your handling code here:
+        new SellCar();
+    }//GEN-LAST:event_sellCarButtonActionPerformed
+
+    private void viewSoldCarButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewSoldCarButtonActionPerformed
+        // TODO add your handling code here:
+        new SoldCars();
+    }//GEN-LAST:event_viewSoldCarButtonActionPerformed
 
     /**
      * @param args the command line arguments
