@@ -12,7 +12,8 @@ public class MainMenu extends javax.swing.JFrame {
 
     public MainMenu() {
         initComponents();
-        DBShenaningans.init(jTable1);
+        DBShenaningans.mainMenuTable = jTable1;
+        DBShenaningans.updateMainMenuTable();
     }
 
     /**

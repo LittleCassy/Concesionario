@@ -16,6 +16,7 @@ public class SellCar extends javax.swing.JFrame {
      */
     public SellCar() {
         initComponents();
+        DBShenaningans.vehicleComboBox=vehicleComboBox;
         this.setVisible(true);
     }
 

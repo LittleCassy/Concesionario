@@ -109,7 +109,7 @@ public class NewPerson extends javax.swing.JFrame {
 
     private void createButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createButtonActionPerformed
         // Code for creating
-        
+        DBShenaningans.insertNewPerson(fieldNombre.getText(), fieldApellido.getText(), fieldDNI.getText());
         //AND~
         this.dispose();
     }//GEN-LAST:event_createButtonActionPerformed
